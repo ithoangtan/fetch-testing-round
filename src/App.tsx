@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import './App.css'
+import "slick-carousel/slick/slick.css"; 
 import Home from './pages/Home'
 
 const AppStyled = styled.div``

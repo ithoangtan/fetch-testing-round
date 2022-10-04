@@ -7,7 +7,7 @@ import Title from 'components/Typography/Title'
 import React from 'react'
 import styled from 'styled-components'
 import { Color } from 'styles/color'
-
+import CountUp from 'react-countup'
 type HeaderCardProps = React.HTMLAttributes<HTMLDivElement> & {}
 
 const HeaderCardStyled = styled.div`
@@ -41,9 +41,9 @@ const HeaderCard: React.FC<HeaderCardProps> = ({ ...rest }) => {
     <HeaderCardStyled {...rest}>
       <Title variant='title3'>Available Coin balance</Title>
       <Title variant='h1' className='card_number'>
-        340
+        <CountUp end={340} duration={1.5} />
       </Title>
-      <ProcessLine current={50} />
+      <ProcessLine current={1200 / (1200 + 800) * 100} />
       <Paragraph type='secondary' className='card_description'>
         You have paid rental fee for $1,200. Pay more $800 to achieve Gold Tier.
       </Paragraph>
