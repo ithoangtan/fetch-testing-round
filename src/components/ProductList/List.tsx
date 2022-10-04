@@ -39,34 +39,34 @@ const ProductList: React.FC<ProductListProps> = ({
     autoplay: false,
     speed: 500,
     autoplaySpeed: 3000,
-    slidesToShow: 5,
-    slidesToScroll: 4,
+    slidesToShow: 1.5,
+    slidesToScroll: 1,
     initialSlide: 0,
     touchThreshold: 20,
     variableWidth: true,
-    responsive: [
-      {
-        breakpoint: 1440,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 4,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2.5,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 624,
-        settings: {
-          slidesToShow: 1.5,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+    // responsive: [
+    //   {
+    //     breakpoint: 1440,
+    //     settings: {
+    //       slidesToShow: 5,
+    //       slidesToScroll: 4,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 2.5,
+    //       slidesToScroll: 2,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 624,
+    //     settings: {
+    //       slidesToShow: 1.5,
+    //       slidesToScroll: 1,
+    //     },
+    //   },
+    // ],
     ...settingSlider,
   }
 
@@ -83,6 +83,7 @@ const ProductList: React.FC<ProductListProps> = ({
             </div>
           )
         })}
+        {/* TODO: Need skeleton if call API data */}
         {isLoading &&
           productList.length === 0 &&
           [...new Array(4)].map((p) => {
