@@ -1,7 +1,15 @@
+@font-face {
+  font-family: 'Hellix';
+  src: /* IE6-IE8 */ url('./assets/fonts/Hellix/Hellix-Regular.eot') format('embedded-opentype'),
+    /* Super Modern Browsers */ url('./assets/fonts/Hellix/Hellix-Regular.woff2') format('woff2'),
+    /* Pretty Modern Browsers */ url('./assets/fonts/Hellix/Hellix-Regular.woff') format('woff'),
+    /* Safari, Android, iOS */ url('./assets/fonts/Hellix/Hellix-Regular.ttf') format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Hellix', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
